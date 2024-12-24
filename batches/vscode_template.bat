@@ -1,11 +1,17 @@
 @echo off
+color a
+:: Check for administrator privileges
+net session >nul 2>&1
+if %ERRORLEVEL% NEQ 0 (
+    echo This script requires administrative privileges.
+    pause
+    exit /b
+)
+
 REM Check if winget is available
-echo ██╗    ██╗██╗███╗   ██╗ ██████╗ ███████╗████████╗   ██╗  ██╗██╗   ██╗██████╗     ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗     ██╗     ███████╗██████╗ 
-echo ██║    ██║██║████╗  ██║██╔════╝ ██╔════╝╚══██╔══╝   ██║  ██║██║   ██║██╔══██╗    ██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║     ██║     ██╔════╝██╔══██╗
-echo ██║ █╗ ██║██║██╔██╗ ██║██║  ███╗█████╗     ██║█████╗███████║██║   ██║██████╔╝    ██║██╔██╗ ██║███████╗   ██║   ███████║██║     ██║     █████╗  ██████╔╝
-echo ██║███╗██║██║██║╚██╗██║██║   ██║██╔══╝     ██║╚════╝██╔══██║██║   ██║██╔══██╗    ██║██║╚██╗██║╚════██║   ██║   ██╔══██║██║     ██║     ██╔══╝  ██╔══██╗
-echo ╚███╔███╔╝██║██║ ╚████║╚██████╔╝███████╗   ██║      ██║  ██║╚██████╔╝██████╔╝    ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗███████╗███████╗██║  ██║
-echo  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝  ╚═╝ ╚═════╝ ╚═════╝     ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
+echo --------------------------------------------------------
+echo        Winget Hub Installer - Visual Studio Code
+echo --------------------------------------------------------
 echo Checking for winget...
 winget --version >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
@@ -17,7 +23,7 @@ if %ERRORLEVEL% NEQ 0 (
 
 REM Installing Visual Studio Code
 echo Installing Visual Studio Code...
-winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Microsoft.VisualStudioCode --accept-package-agreements --accept-source-agreements
 
 REM Check installation status
 if %ERRORLEVEL% EQU 0 (
