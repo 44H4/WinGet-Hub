@@ -67,6 +67,35 @@ body {
   background-color: #fff;
 }
 
+    .box-left {
+        margin: 5px;
+        padding: 20px; /* Increases the padding */
+        width: 200px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .box-right {
+        margin: 5px;
+        padding: 20px; /* Increases the padding */
+        width: 200px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        text-align: right;
+		border-radius: 5px;
+    }
+
+        .box-left, .box-right {
+            margin: 5px;
+            padding: 10px;
+            width: 45%; /* Adjust width as needed */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
