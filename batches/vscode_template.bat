@@ -12,7 +12,11 @@ REM Check if winget is available
 echo --------------------------------------------------------
 echo        Winget Hub Installer - Visual Studio Code
 echo --------------------------------------------------------
-echo Checking for winget...
+echo Made by : 44H4
+echo Opening the WinGet Hub website for more information...
+start https://44h4.github.io/WinGet-Hub
+pause
+echo Checking for WinGet...
 winget --version >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
     echo Winget is not installed or not available on your system.
