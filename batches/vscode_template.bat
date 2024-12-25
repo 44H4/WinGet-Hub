@@ -13,8 +13,8 @@ echo --------------------------------------------------------
 echo        Winget Hub Installer - Visual Studio Code
 echo --------------------------------------------------------
 echo Made by : 44H4
-echo Opening the WinGet Hub website for more information...
-start https://44h4.github.io/WinGet-Hub
+echo Opening the WinGet Hub website (minimized) for more information...
+
 pause
 echo Checking for WinGet...
 winget --version >nul 2>&1
@@ -28,7 +28,8 @@ if %ERRORLEVEL% NEQ 0 (
 REM Installing Visual Studio Code
 echo Installing Visual Studio Code...
 winget install -e --id Microsoft.VisualStudioCode --accept-package-agreements --accept-source-agreements
-
+echo Opening the WinGet Hub website (minimized) for more information...
+start /MIN powershell -command "Start-Process 'https://44h4.github.io/WinGet-Hub'"
 REM Check installation status
 if %ERRORLEVEL% EQU 0 (
     echo Visual Studio Code installed successfully.

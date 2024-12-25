@@ -4239,6 +4239,18 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  align-content: center;
+  justify-content: center; /* Add this to center the tabs */
+  display: flex; /* Ensure the container uses flexbox */
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -4256,6 +4268,7 @@ input[type="button"].btn-block {
 
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
+  align-content: center;
 }
 
 .nav-tabs .nav-item {
