@@ -10,7 +10,7 @@ if %ERRORLEVEL% NEQ 0 (
 
 REM Check if winget is available
 echo --------------------------------------------------------
-echo        Winget Hub Installer - WinRAR
+echo             Winget Hub Installer - WinRAR
 echo --------------------------------------------------------
 echo Made by : 44H4
 echo Opening the WinGet Hub website (minimized) for more information...
@@ -29,7 +29,7 @@ REM Installing WinRAR
 echo Installing WinRAR...
 winget install -e --id rarlab.WinRAR
 echo Opening the WinGet Hub website (minimized) for more information...
-start /MIN powershell -command "Start-Process 'https://44h4.github.io/WinGet-Hub'"
+start /MIN powershell -command "Start-Process 'https://winget-hub.pages.dev'"
 REM Check installation status
 if %ERRORLEVEL% EQU 0 (
     echo WinRAR installed successfully.

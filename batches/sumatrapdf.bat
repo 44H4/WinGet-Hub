@@ -10,7 +10,7 @@ if %ERRORLEVEL% NEQ 0 (
 
 REM Check if winget is available
 echo --------------------------------------------------------
-echo           Winget Hub Installer - 7-Zip
+echo             Winget Hub Installer - SumatraPDF 
 echo --------------------------------------------------------
 echo Made by : 44H4
 echo Opening the WinGet Hub website (minimized) for more information...
@@ -25,15 +25,15 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b
 )
 
-REM Installing 7-Zip
-echo Installing 7-Zip...
-winget install -e --id 7zip.7zip
+REM Installing SumatraPDF 
+echo Installing SumatraPDF ...
+winget install -e --id kjk.SumatraPDF 
 echo Opening the WinGet Hub website (minimized) for more information...
 start /MIN powershell -command "Start-Process 'https://winget-hub.pages.dev'"
 REM Check installation status
 if %ERRORLEVEL% EQU 0 (
-    echo 7-Zip installed successfully.
+    echo SumatraPDF  installed successfully.
 ) else (
-    echo Failed to install 7-Zip. Please check for errors above.
+    echo Failed to install SumatraPDF . Please check for errors above.
 )
 pause

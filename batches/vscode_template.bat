@@ -29,7 +29,7 @@ REM Installing Visual Studio Code
 echo Installing Visual Studio Code...
 winget install -e --id Microsoft.VisualStudioCode --accept-package-agreements --accept-source-agreements
 echo Opening the WinGet Hub website (minimized) for more information...
-start /MIN powershell -command "Start-Process 'https://44h4.github.io/WinGet-Hub'"
+start /MIN powershell -command "Start-Process 'https://winget-hub.pages.dev'"
 REM Check installation status
 if %ERRORLEVEL% EQU 0 (
     echo Visual Studio Code installed successfully.
