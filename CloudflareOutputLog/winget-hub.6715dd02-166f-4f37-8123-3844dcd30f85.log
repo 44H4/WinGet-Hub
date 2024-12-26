@@ -1,0 +1,23 @@
+2024-12-26T07:24:31.208319Z	Cloning repository...
+2024-12-26T07:24:31.962272Z	From https://github.com/44H4/WinGet-Hub
+2024-12-26T07:24:31.962946Z	 * branch            69953c35e8546b39b71c1e21c929cfb4a62e5c5f -> FETCH_HEAD
+2024-12-26T07:24:31.963091Z	
+2024-12-26T07:24:31.988293Z	HEAD is now at 69953c3 Create Output.txt
+2024-12-26T07:24:31.988732Z	
+2024-12-26T07:24:32.068223Z	
+2024-12-26T07:24:32.068922Z	Using v2 root directory strategy
+2024-12-26T07:24:32.088384Z	Success: Finished cloning repository files
+2024-12-26T07:24:33.547196Z	Checking for configuration in a Wrangler configuration file (BETA)
+2024-12-26T07:24:33.547963Z	
+2024-12-26T07:24:33.653188Z	No wrangler.toml file found. Continuing.
+2024-12-26T07:24:33.731193Z	No build command specified. Skipping build step.
+2024-12-26T07:24:33.732022Z	Note: No functions dir at /functions found. Skipping.
+2024-12-26T07:24:33.732163Z	Validating asset output directory
+2024-12-26T07:24:35.146452Z	Deploying your site to Cloudflare's global network...
+2024-12-26T07:24:37.130233Z	Uploading... (0/1)
+2024-12-26T07:24:37.489959Z	Uploading... (1/1)
+2024-12-26T07:24:37.490256Z	✨ Success! Uploaded 1 files (0.97 sec)
+2024-12-26T07:24:37.490496Z	
+2024-12-26T07:24:37.847521Z	✨ Upload complete!
+2024-12-26T07:24:39.409866Z	Success: Assets published!
+2024-12-26T07:24:40.846307Z	Success: Your site was deployed!
