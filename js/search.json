@@ -1,0 +1,18 @@
+[
+    {
+      "url": "/browsers.html",
+      "title": "Page 1",
+      "description": "This is the first page of the site."
+    },
+    {
+      "url": "/utilites.html",
+      "title": "Page 2",
+      "description": "Learn more about our services here."
+    },
+    {
+      "url": "/tweaks.html",
+      "title": "Page 3",
+      "description": "Discover our contact details."
+    }
+  ]
+  

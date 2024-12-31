@@ -126,7 +126,14 @@ abbr[data-original-title] {
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
-
+#search {
+   width: 100%; /* Full-width or custom size */
+   max-width: 300px; /* Optional: Constrain max size */
+   display: block; /* Align properly in the flow */
+    margin-left: auto;
+    margin-right: 0; /* Explicitly set right margin to 0 */
+   text-align: right; /* Align text inside input to the start */
+    }
 address {
   margin-bottom: 1rem;
   font-style: normal;
